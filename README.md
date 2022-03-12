@@ -1,8 +1,8 @@
-# Getting Started with Create React App
+#  NetFlix Clone App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project was created by me along with clever programmer [Check it out](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+## Available Resource
 
 In the project directory, you can run:
 
