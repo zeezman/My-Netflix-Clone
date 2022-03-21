@@ -42,7 +42,7 @@ const Row = ({title, fetchUrl, isLargeRow}) => {
               const urlParams = new URLSearchParams(new URL(url).search);
               setTrailerUrl(urlParams.get('v'));
             })
-            .catch((error) => alert("Network Error"));
+            .catch((error) => alert("Unexpected Error Can't play video right now "));
           }
     };
      
@@ -53,7 +53,7 @@ const Row = ({title, fetchUrl, isLargeRow}) => {
 
       <div className="row__posters" >    
 
-       <HorizontalScroll> 
+       {/* <HorizontalScroll>  */}
           {movies.map((movie) => (
               <img 
               key={movie.id} 
@@ -62,7 +62,7 @@ const Row = ({title, fetchUrl, isLargeRow}) => {
               src={`${base_url}${isLargeRow ? movie.poster_path : movie.backdrop_path}`} 
               alt={movie.name} />
           ))}
-        </HorizontalScroll>
+        {/* </HorizontalScroll> */}
 
         </div>
         {trailerUrl && <YouTube videoId={trailerUrl} opts={opts} /> }  
